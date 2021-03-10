@@ -13,7 +13,7 @@ public class Config {
     public static boolean auto = false;
     public static int mtreshold = 5;
     public static Block[] checkblocks = {
-            Blocks.DIAMOND_ORE, Blocks.LAPIS_ORE, Blocks.ANCIENT_DEBRIS, Blocks.CRAFTING_TABLE, Blocks.NETHER_QUARTZ_ORE};
+            Blocks.DIAMOND_ORE, Blocks.LAPIS_ORE, Blocks.ANCIENT_DEBRIS, Blocks.CRAFTING_TABLE, Blocks.NETHER_QUARTZ_ORE, Blocks.EMERALD_ORE, Blocks.COAL_ORE,};
     public static int kcScan = GLFW.GLFW_KEY_Y;
     public static int kcRemove = GLFW.GLFW_KEY_V;
 
