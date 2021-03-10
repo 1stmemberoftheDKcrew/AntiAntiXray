@@ -7,7 +7,8 @@ import org.lwjgl.glfw.GLFW;
 
 public class Config {
     public static int rad = 5;
-    public static long delay = 2;
+    public static long delay = 1;    
+                // NEVER EVER SET DELAY TO ZERO
     public static Manager manager = new Manager();
     public static boolean scanAll = false;
     public static boolean auto = false;
