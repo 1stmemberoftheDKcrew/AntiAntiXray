@@ -8,14 +8,14 @@ import net.minecraft.text.Text;
 
 public class Optimize extends Base {
     public Optimize() {
-        super("optimize", new String[]{"optimize", "o"}, "Optimizes for either diamond, redstone ore or stone");
+        super("optimize", new String[]{"optimize", "o"}, "Optimizes for either diamond, redstone ore, stone, cj, cjstone, default");
     }
 
     @Override
     public void run(String[] args) {
         if (args.length < 2) {
             assert MinecraftClient.getInstance().player != null;
-            MinecraftClient.getInstance().player.sendMessage(Text.of("[AAX] Please provide a ore block to optimize for as argument. Currently: diamond, redstone ore or stone"), false);
+            MinecraftClient.getInstance().player.sendMessage(Text.of("[AAX] Please provide a ore block to optimize for as argument. Currently: diamond, redstone ore, stone, cj, cjstone"), false);
             return;
         }
         String block = args[1];
@@ -47,7 +47,7 @@ public class Optimize extends Base {
             case "cjstone":
                 Config.checkblocks = new Block[]{Blocks.DIAMOND_ORE, Blocks.LAPIS_ORE,
                          Blocks.NETHER_QUARTZ_ORE, Blocks.ANCIENT_DEBRIS, Blocks.CRAFTING_TABLE, Blocks.STONE, Blocks.BEDROCK};
-                MinecraftClient.getInstance().player.sendMessage(Text.of("[AAX] Set optimization to CoreJourney"), false);
+                MinecraftClient.getInstance().player.sendMessage(Text.of("[AAX] Set optimization to CoreJourney but with stone and bedrock"), false);
                 break;
 
             default:
