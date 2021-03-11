@@ -14,5 +14,7 @@ To remove a block for testing, creating a ghost block, press `V` ingame.
 2. Put it into your mods folder in your fabric installation
 3. Enjoy
 
+## Building
+MAC: open terminal, cd into some folder, git clone or whatever it is nowadays (rename the jar in the builds folder), drag gradlew to terminal (dont execute yet) then type "build" and hit enter
 ## Commands
 All commands can be viewed using `:aax help`
