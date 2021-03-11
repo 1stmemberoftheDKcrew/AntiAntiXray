@@ -37,6 +37,18 @@ public class Optimize extends Base {
                 Config.checkblocks = new Block[]{Blocks.STONE};
                 MinecraftClient.getInstance().player.sendMessage(Text.of("[AAX] Set optimization to stone"), false);
                 break;
+                
+            case "cj":
+                Config.checkblocks = new Block[]{Blocks.DIAMOND_ORE, Blocks.LAPIS_ORE,
+                         Blocks.NETHER_QUARTZ_ORE, Blocks.ANCIENT_DEBRIS, Blocks.CRAFTING_TABLE};
+                MinecraftClient.getInstance().player.sendMessage(Text.of("[AAX] Set optimization to CoreJourney"), false);
+                break;
+                
+            case "cjstone":
+                Config.checkblocks = new Block[]{Blocks.DIAMOND_ORE, Blocks.LAPIS_ORE,
+                         Blocks.NETHER_QUARTZ_ORE, Blocks.ANCIENT_DEBRIS, Blocks.CRAFTING_TABLE, Blocks.STONE, Blocks.BEDROCK};
+                MinecraftClient.getInstance().player.sendMessage(Text.of("[AAX] Set optimization to CoreJourney"), false);
+                break;
 
             default:
                 Config.checkblocks = new Block[]{Blocks.OBSIDIAN, Blocks.CLAY, Blocks.MOSSY_COBBLESTONE,
